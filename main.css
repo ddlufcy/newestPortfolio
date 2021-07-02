@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,500,600&display=swap");
+body {
+  max-height: 99vh;
+}
+
+.main {
+  background: linear-gradient(130deg, #303030, #3a3636 115%);
+  overflow-y: hidden;
+  height: 99vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px auto 30px;
+      grid-template-columns: 30px auto 30px;
+  -ms-grid-rows: 15% auto;
+      grid-template-rows: 15% auto;
+}
+
+header {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+#firstName {
+  white-space: nowrap;
+  color: #EDEDED;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-animation: moveName 3s 1 ease;
+          animation: moveName 3s 1 ease;
+  letter-spacing: 3px;
+}
+
+#firstName:hover {
+  height: 65px;
+}
+
+@-webkit-keyframes moveName {
+  from {
+    letter-spacing: 120px;
+  }
+  to {
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes moveName {
+  from {
+    letter-spacing: 120px;
+  }
+  to {
+    letter-spacing: 3px;
+  }
+}
+
+.boxes {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  border-radius: 35px;
+  background: #EDEDED;
+  width: 65px;
+  height: 65px;
+  -webkit-transition: width 2250ms, height 2250ms 0950ms ease, background 1200ms;
+  transition: width 2250ms, height 2250ms 0950ms ease, background 1200ms;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bigBox {
+  margin-left: 1em;
+  margin-right: 1em;
+  background: #444444;
+  width: 70vw;
+  height: 75vh;
+  -webkit-transition: width 2250ms, height 2250ms 0950ms ease, color 1000ms, font-size 2250ms;
+  transition: width 2250ms, height 2250ms 0950ms ease, color 1000ms, font-size 2250ms;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  border-radius: 52px;
+  border-radius: 51px;
+  -webkit-box-shadow: -2px -2px 1px #4d4c4c;
+          box-shadow: -2px -2px 1px #4d4c4c;
+  display: inherit;
+  font-size: 2.5em;
+  color: #ededed;
+}
+/*# sourceMappingURL=main.css.map */

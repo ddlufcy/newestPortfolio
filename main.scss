@@ -1,0 +1,104 @@
+// main body that contains everything
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,500,600&display=swap");
+@import "/animations.css";
+body {
+	max-height: 99vh;
+}
+.main {
+	background: linear-gradient(130deg, #303030, #3a3636 115%);
+	overflow-y: hidden;
+	height: 99vh;
+	display: grid;
+	grid-template-columns: 30px auto 30px;
+	grid-template-rows: 15% auto;
+}
+
+//header 
+header{
+	grid-column-start: 2;
+	grid-row-start:1;
+}
+
+ #firstName {
+	white-space: nowrap;
+	color: #EDEDED;
+	font-kerning: auto;
+    font-family: 'Montserrat', sans-serif;
+    animation: moveName 3s 1 ease;
+	letter-spacing: 3px;
+ }
+ @keyframes moveName{
+    from{
+        letter-spacing: 120px; 
+    }
+    to{
+        letter-spacing: 3px;
+    }
+	
+}
+
+//boxes
+.boxes{
+	grid-column-start: 2;
+	grid-row-start:2;
+	display: flex;
+	justify-content: space-between;
+	font-kerning: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+	grid-column-start: 3;
+	grid-row-start:2;
+	border-radius: 35px;
+	background: #EDEDED;
+	width: 65px;
+	height: 65px;	
+	margin-left: 1em;
+	margin-right: 1em;
+	transition: 
+		width 2250ms, 
+		height 2250ms 0950ms ease,
+		background 1200ms,
+		color 1000ms,
+		font-size 2250ms 0950ms ease;
+
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	//styles for text
+	display: flex;
+    align-items: center;
+    justify-content: center;	 
+	overflow: scroll;
+	font-size: 1em;
+}
+
+//large box from transition
+.bigBox {
+	// margin-left: 1em;
+	// margin-right: 1em;
+	margin: auto;
+	background: #444444;
+	width: 70vw;
+	height: 75vh;	
+	transition:
+		width 2250ms,
+		height 2250ms 0950ms ease,
+		color 1000ms,
+		font-size 2250ms 0950ms ease;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	border-radius: 52px;
+	border-radius: 51px;
+	box-shadow:  -2px -2px 1px #4d4c4c;
+	//text styles
+	font-size: 2.5em;
+    color: #ededed;
+}
+
+
+.bigBoxText{
+
+}
+
