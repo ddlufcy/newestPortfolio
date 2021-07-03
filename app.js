@@ -17,13 +17,10 @@ let initialWidth = null;
 
 let bigBox = document.querySelector('.bigBox')
 
-// boxSpan.forEach((box) => {
-// 	box.addEventListener('transitionend', () => {
-// 		box.classList.toggle('bigBoxText')
-// 		document.getElementById('about').innerText = 
-// 		"Hi I am Daniel"
-// 	});
-// })
+
+let about = document.getElementById('fullTextAbout')
+
+
 
 
 // grab initialWidth to compare
