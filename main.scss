@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,500,600&display=swap");
 body {
 	max-height: 99vh;
+	margin: 0;
+	padding: 0;
 }
 .main {
 	background: linear-gradient(130deg, #303030, #3a3636 115%);
@@ -31,7 +33,7 @@ header{
  }
  @keyframes moveName{
     from{
-        letter-spacing: 120px; 
+        letter-spacing: 130px; 
     }
     to{
         letter-spacing: 3px;
@@ -58,8 +60,8 @@ header{
 	width: 65px;
 	height: 65px;	
 	transition: 
-		width 2250ms, 
-		height 2250ms 0950ms ease, 
+		width 1250ms, 
+		height 1250ms 0950ms ease, 
 		background 1200ms  0950ms ease-in;
 	display: inline-block;
 	text-align: center;
@@ -78,10 +80,10 @@ header{
 	width: 70vw;
 	height: 75vh;	
 	transition:
-		width 2250ms,
-		height 2250ms 0950ms ease-in,
+		width 1250ms,
+		height 1250ms 0950ms ease-in,
 		color 1000ms 0950ms ease-in,
-		font-size 2250ms 0950ms ease-in;
+		font-size 1250ms 0950ms ease-in;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	border-radius: 52px;
@@ -93,8 +95,9 @@ header{
     color: #ededed;
 }
 
+
 .boxText{
-	border: #303030 solid 2px;
+	// border: #303030 solid 2px;
 	border-radius: 25%;
 	&:hover{
 		cursor: pointer;
