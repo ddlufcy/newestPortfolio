@@ -25,12 +25,11 @@ header{
 	color: #EDEDED;
 	font-kerning: auto;
     font-family: 'Montserrat', sans-serif;
-    animation: moveName 3s 1 ease;
+    animation: moveName 4s 1 ease, showBorder 6s 1 ease-in;
 	letter-spacing: 3px;
-	&:hover{
-		height: random(100) + px;
-	}
+	width: fit-content;
  }
+
  @keyframes moveName{
     from{
         letter-spacing: 130px; 
@@ -39,6 +38,15 @@ header{
         letter-spacing: 3px;
     }
 	
+}
+
+@keyframes showBorder{
+	from{
+		border-bottom: #ededed48 1px solid;
+	}
+	to{
+		border-bottom: #ededed03 1px ;
+	}
 }
 
 //boxes
@@ -52,24 +60,26 @@ header{
 }
 
 .box {
-	padding: .3em;
+	padding: .4em;
 	grid-column-start: 3;
 	grid-row-start:2;
 	border-radius: 45px;
 	background: #EDEDED;
-	width: 65px;
-	height: 65px;	
+	width: 77px;
+	height: 75px;	
 	transition: 
-		width 1250ms, 
-		height 1250ms 0950ms ease, 
-		background 1200ms  0950ms ease-in;
+		width 1000ms ease, 
+		height 1000ms ease, 
+		background 1000ms  0950ms ease-in;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	//styles for text
 	display: flex;
     align-items: center;
-    justify-content: center;	 
+    justify-content: center;
+	letter-spacing: 3px;
+	animation: moveName 1s  linear;
 }
 
 //large box from transition
@@ -80,10 +90,10 @@ header{
 	width: 70vw;
 	height: 75vh;	
 	transition:
-		width 1250ms,
-		height 1250ms 0950ms ease-in,
+		width 1000ms  ease-in-out,
+		height 1000ms ease-in,
 		color 1000ms 0950ms ease-in,
-		font-size 1250ms 0950ms ease-in;
+		font-size 1000ms 50ms ease-in;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	border-radius: 52px;
@@ -91,7 +101,7 @@ header{
 	box-shadow:  -2px -2px 1px #4d4c4c;
 	//text styles
 	display: inherit;
-	font-size: 2.5em;
+	font-size: 2em;
     color: #ededed;
 }
 
@@ -99,6 +109,8 @@ header{
 .boxText{
 	// border: #303030 solid 2px;
 	border-radius: 25%;
+	font-kerning: none;
+    font-variant: petite-caps;
 	&:hover{
 		cursor: pointer;
 	}
