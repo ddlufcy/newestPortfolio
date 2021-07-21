@@ -6,7 +6,7 @@ body {
 }
 
 .main {
-  background: linear-gradient(130deg, #303030, #3a3636 115%);
+  background: linear-gradient(130deg, #3C91E6, #3a3636 115%);
   overflow-y: hidden;
   height: 99vh;
   display: -ms-grid;
@@ -61,7 +61,7 @@ header {
     border-bottom: #ededed48 1px solid;
   }
   to {
-    border-bottom: #ededed03 1px;
+    border-bottom: #f7f3f303 1px;
   }
 }
 
@@ -70,7 +70,7 @@ header {
     border-bottom: #ededed48 1px solid;
   }
   to {
-    border-bottom: #ededed03 1px;
+    border-bottom: #f7f3f303 1px;
   }
 }
 
@@ -100,8 +100,8 @@ header {
   background: #EDEDED;
   width: 77px;
   height: 75px;
-  -webkit-transition: width 1000ms ease,  height 1000ms ease,  background 1000ms  0950ms ease-in;
-  transition: width 1000ms ease,  height 1000ms ease,  background 1000ms  0950ms ease-in;
+  -webkit-transition: width 1200ms ease,  height 1200ms ease,  background 1200ms  0950ms ease-in;
+  transition: width 1200ms ease,  height 1200ms ease,  background 1200ms  0950ms ease-in;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -122,11 +122,11 @@ header {
 .bigBox {
   margin-left: 1em;
   margin-right: 1em;
-  background: #444444;
+  background: #FAFFFD;
   width: 70vw;
   height: 75vh;
-  -webkit-transition: width 1000ms  ease-in-out, height 1000ms ease-in, color 1000ms 0950ms ease-in, font-size 1000ms 50ms ease-in;
-  transition: width 1000ms  ease-in-out, height 1000ms ease-in, color 1000ms 0950ms ease-in, font-size 1000ms 50ms ease-in;
+  -webkit-transition: width 1200ms  ease-in-out, height 1200ms ease-in, color 1200ms 0950ms ease-in, font-size 1200ms 50ms ease-in;
+  transition: width 1200ms  ease-in-out, height 1200ms ease-in, color 1200ms 0950ms ease-in, font-size 1200ms 50ms ease-in;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 3;
@@ -136,7 +136,7 @@ header {
           box-shadow: -2px -2px 1px #4d4c4c;
   display: inherit;
   font-size: 2em;
-  color: #ededed;
+  color: #342E37;
 }
 
 .boxText {
@@ -148,5 +148,13 @@ header {
 
 .boxText:hover {
   cursor: pointer;
+}
+
+.skillRow {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */
