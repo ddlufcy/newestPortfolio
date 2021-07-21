@@ -5,8 +5,20 @@ body {
   padding: 0;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #342E37;
+  }
+}
+
 .main {
-  background: linear-gradient(130deg, #3C91E6, #3a3636 115%);
+  background: linear-gradient(130deg, #3C91E6, #44a2ff 115%);
   overflow-y: hidden;
   height: 99vh;
   display: -ms-grid;
